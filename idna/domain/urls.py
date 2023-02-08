@@ -12,6 +12,6 @@ router.register(r'test', TestViewSet)
 
 urlpatterns = [
     path('', views.getData),
-    path('api-auth/', include('rest_framework.urls'))
-    # path('post/', views.postData),
+    path('api-auth/', include('rest_framework.urls')),
+    path('post/', views.postData),
 ]

@@ -12,4 +12,10 @@ class TestViewSet(viewsets.ModelViewSet):
     
     
 def getData(request):
+    data = TestData.objects.all()
+    print(data)
     return Response()
+
+def postData(request):
+    print('Hello')
+    
