@@ -14,4 +14,6 @@ urlpatterns = [
     path('', views.getData),
     path('api-auth/', include('rest_framework.urls')),
     path('post/', views.postData),
+    path('idna/',views.idnaDomain,name='idnaDomain'),
+    path('api/', views.apiOverview , name="api-overview")
 ]
